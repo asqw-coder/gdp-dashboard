@@ -1,0 +1,22 @@
+// =============================================================================
+// AlgoTradeAI Dashboard — Cloudflare Pages Configuration
+// =============================================================================
+// Deploy with: wrangler pages deploy dist --project-name=algo-trade-ai-dashboard
+// Or connect GitHub repo in Cloudflare Pages dashboard for auto-deploy on push.
+// =============================================================================
+
+name = "algo-trade-ai-dashboard"
+pages_build_output_dir = "dist"
+
+[vars]
+ENVIRONMENT = "production"
+
+# ── Build settings ─────────────────────────────────────────────────────────────
+# Set these in Cloudflare Pages dashboard under Settings → Environment Variables:
+#
+#   VITE_WORKER_URL = https://algo-trade-ai.yourname.workers.dev
+#   VITE_API_KEY    = your_64_char_hex_api_key
+#
+# These are injected at build time by Vite — they are embedded in the JS bundle.
+# Do NOT store secrets here. Use the Pages dashboard for sensitive values.
+# ─────────────────────────────────────────────────────────────────────────────
